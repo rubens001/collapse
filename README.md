@@ -1,11 +1,21 @@
 # Collapse
 
-## Angular 4 & Material 2 & Flex-layout
+## Angular 4 & Material 2 & Flex-layout & Animations = Collapse / Accordion !
 
 ### DEPENDENCIES : need node version 6.x+ AND @angular/cli
 
-#### @angular/cli install
+## DEMO : [https://fullstack-c6c9e.firebaseapp.com/html/collapse/](https://fullstack-c6c9e.firebaseapp.com/html/collapse/)
 
+### instrus
+```
+git clone git@github.com:rubens001/collapse.git
+cd collapse
+npm install
+ng serve
+http://localhost:4200
+```
+
+#### @angular/cli install
 ```sh
 $ npm install -g @angular/cli
 OR
@@ -34,8 +44,6 @@ $ npm install
 $ ng serve
 http://localhost:4200
 ```
-
-## DEMO : [https://fullstack-c6c9e.firebaseapp.com/html/collapse/](https://fullstack-c6c9e.firebaseapp.com/html/collapse/)
 
 ## Refs
 
