@@ -1,0 +1,39 @@
+<h2>
+  {{title}}
+</h2>
+
+<app-collapsible [collapsed]="collapsedState[0]" title="Means of Transportation" iconName="directions_car">
+    <p class="ml1">
+    <i class="material-icons">directions_bus</i> Bus<br />
+    <i class="material-icons">directions_car</i> Car<br />
+    <i class="material-icons">directions_bike</i> Bike<br />
+    <i class="material-icons">directions_walk</i> Walk<br />
+    <i class="material-icons">directions_boat</i> Boat<br />
+    <i class="material-icons">flight</i> Flight<br />
+    <i class="material-icons">motorcycle</i> Motorcycle<br />
+    </p>
+</app-collapsible>
+
+<app-collapsible [collapsed]="collapsedState[1]" title="Devices" iconName="computer">
+    <p class="ml1">
+    <i class="material-icons">desktop_mac</i> Desktop<br />
+    <i class="material-icons">laptop</i> Laptop<br />
+    <i class="material-icons">phone_iphone</i> Smartphone<br />
+    <i class="material-icons">tablet_mac</i> Tablet<br />
+    </p>
+</app-collapsible>
+
+<app-collapsible [collapsed]="collapsedState[2]" title="Places" iconName="home">
+    <p class="ml1">
+    <i class="material-icons">home</i> Home<br />
+    <i class="material-icons">business_center</i> Business<br />
+    <i class="material-icons">fitness_center</i> Fitness<br />
+    <i class="material-icons">beach_access</i> Beach<br />
+    </p>
+</app-collapsible>
+
+<app-collapsible [collapsed]="collapsedState[3]" title="Picture" iconName="image">
+    <p class="ml1">
+    <img src="http://lorempixel.com/400/200/" />
+    </p>
+</app-collapsible>

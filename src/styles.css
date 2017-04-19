@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+/* '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+/* '~@angular/material/prebuilt-themes/purple-green.css'; */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+
+body {
+  margin: 10;
+  font-family: Roboto, sans-serif;
+}

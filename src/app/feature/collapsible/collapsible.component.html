@@ -1,0 +1,10 @@
+<div fxLayout="column">
+    <md-toolbar color="primary" fxFlex="100" (click)="toggle()" class="button-title">
+      <span fxFlex="1em"><i class="material-icons">{{ iconName }}</i></span>
+      <span fxFlex="grow" fxFlexOffset="1em">{{ title }}</span>
+      <span><app-chevron [isDown]="collapsed"></app-chevron></span>
+    </md-toolbar>
+</div>
+<div class="collapsible" [@openClose]="collapsedState">
+  <ng-content></ng-content>
+</div>
