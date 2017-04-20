@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChange, AUTO_STYLE, trigger, state, animate, transition, style } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, AUTO_STYLE, trigger, state, animate, transition, style, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-collapsible',
@@ -21,20 +21,24 @@ export class CollapsibleComponent implements OnInit, OnChanges {
   @Input() collapsed = true;
   @Input() title: string;
   @Input() iconName: string;
+  @Output() change: EventEmitter<boolean> = new EventEmitter<boolean>();
   collapsedState: string;
 
   constructor() { }
 
   ngOnInit() {
-    this.toggle();
+    this.verify();
   }
 
   ngOnChanges(changes: {[collapsed: string]: SimpleChange}) {
-    this.toggle();
+    this.verify();
   }
 
   toggle() {
-    this.collapsed = !this.collapsed;
+    this.change.emit(this.collapsed);
+  }
+
+  verify() {
     this.collapsedState = this.collapsed ? 'collapsed' : 'expanded';
   }
 }
