@@ -19,9 +19,6 @@ import { Component, OnInit, Input, Output, OnChanges, SimpleChange, AUTO_STYLE, 
 export class CollapsibleComponent implements OnInit, OnChanges {
 
   @Input() collapsed = true;
-  @Input() title: string;
-  @Input() iconName: string;
-  @Output() change: EventEmitter<boolean> = new EventEmitter<boolean>();
   collapsedState: string;
 
   constructor() { }
@@ -32,10 +29,6 @@ export class CollapsibleComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: {[collapsed: string]: SimpleChange}) {
     this.verify();
-  }
-
-  toggle() {
-    this.change.emit(this.collapsed);
   }
 
   verify() {

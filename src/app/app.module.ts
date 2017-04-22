@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
+import { DropdownButtonComponent } from './feature/dropdown-button/dropdown-button.component';
 import { CollapsibleComponent } from './feature/collapsible/collapsible.component';
 import { ChevronComponent } from './feature/chevron/chevron.component';
 
@@ -14,7 +15,8 @@ import { ChevronComponent } from './feature/chevron/chevron.component';
   declarations: [
     AppComponent,
     CollapsibleComponent,
-    ChevronComponent
+    ChevronComponent,
+    DropdownButtonComponent,
   ],
   imports: [
     MaterialModule.forRoot(),

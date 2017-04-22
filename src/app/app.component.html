@@ -2,7 +2,8 @@
   {{title}}
 </h2>
 
-<app-collapsible [collapsed]="collapsedState[0]" title="Transportations" iconName="directions_car" (change)="changed(0)">
+<app-dropdown-button [collapsed]="collapsedState[0]" title="Transportations" (change)="changed(0)"></app-dropdown-button>
+<app-collapsible [collapsed]="collapsedState[0]">
     <p class="ml1">
     <i class="material-icons">directions_bus</i> Bus<br />
     <i class="material-icons">directions_car</i> Car<br />
@@ -14,7 +15,8 @@
     </p>
 </app-collapsible>
 
-<app-collapsible [collapsed]="collapsedState[1]" title="Devices" iconName="computer" (change)="changed(1)">
+<app-dropdown-button [collapsed]="collapsedState[1]" title="Devices" iconName="computer" (change)="changed(1)"></app-dropdown-button>
+<app-collapsible [collapsed]="collapsedState[1]">
     <p class="ml1">
     <i class="material-icons">desktop_mac</i> Desktop<br />
     <i class="material-icons">laptop</i> Laptop<br />
@@ -23,7 +25,8 @@
     </p>
 </app-collapsible>
 
-<app-collapsible [collapsed]="collapsedState[2]" title="Places" iconName="home" (change)="changed(2)">
+<app-dropdown-button [collapsed]="collapsedState[2]" title="Places" iconName="home" (change)="changed(2)"></app-dropdown-button>
+<app-collapsible [collapsed]="collapsedState[2]">
     <p class="ml1">
     <i class="material-icons">home</i> Home<br />
     <i class="material-icons">business_center</i> Business<br />
@@ -32,7 +35,8 @@
     </p>
 </app-collapsible>
 
-<app-collapsible [collapsed]="collapsedState[3]" title="Picture" iconName="image" (change)="changed(3)">
+<app-dropdown-button [collapsed]="collapsedState[3]" title="Picture" iconName="image" (change)="changed(3)"></app-dropdown-button>
+<app-collapsible [collapsed]="collapsedState[3]">
     <p class="ml1">
     <img src="http://lorempixel.com/400/200/" />
     </p>

@@ -1,0 +1,9 @@
+<div fxLayout="column">
+    <md-toolbar color="primary" fxFlex="100" (click)="toggle()" class="button-title">
+      <span *ngIf="iconName"><i class="material-icons">{{ iconName }}</i>
+        <span fxFlexOffset="1em"></span>
+      </span>
+      <span fxFlex="grow">{{ title }}</span>
+      <span><app-chevron [isDown]="collapsed"></app-chevron></span>
+    </md-toolbar>
+</div>
